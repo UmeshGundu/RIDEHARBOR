@@ -1,0 +1,207 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #141414, #050505);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Payment Box ===== */
+.payment-box {
+    background: rgba(25, 25, 25, 0.95);
+    padding: 45px 40px;
+    width: 420px;
+    border-radius: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.7),
+        0 0 20px rgba(212, 175, 55, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+/* ===== Title ===== */
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    color: #D4AF37;
+    letter-spacing: 1px;
+}
+
+/* ===== Booking Info ===== */
+.payment-box p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===== Input Fields ===== */
+.payment-box input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* ===== Input Focus ===== */
+.payment-box input:focus {
+    border: 1px solid #D4AF37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== Pay Button ===== */
+.payment-box button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(135deg, #D4AF37, #f6e27a);
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ===== Button Hover ===== */
+.payment-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+/* ===== Responsive ===== */
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #141414, #050505);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Payment Box ===== */
+.payment-box {
+    background: rgba(25, 25, 25, 0.95);
+    padding: 45px 40px;
+    width: 420px;
+    border-radius: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.7),
+        0 0 20px rgba(212, 175, 55, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+/* ===== Title ===== */
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    color: #D4AF37;
+    letter-spacing: 1px;
+}
+
+/* ===== Booking Info ===== */
+.payment-box p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===== Input Fields ===== */
+.payment-box input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* ===== Input Focus ===== */
+.payment-box input:focus {
+    border: 1px solid #D4AF37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== Pay Button ===== */
+.payment-box button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(135deg, #D4AF37, #f6e27a);
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ===== Button Hover ===== */
+.payment-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 560px) {
+    body {
+        align-items: flex-start;
+        padding: 20px 0;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .payment-box {
+        width: 100%;
+        padding: 28px 20px;
+        border-radius: 12px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .payment-box p {
+        font-size: 13px;
+        color: #ccc;
+        line-height: 1.6;
+    }
+
+    .payment-box input {
+        padding: 13px 12px;
+        font-size: 14px;
+        margin-top: 12px;
+        border-radius: 6px;
+    }
+
+    .payment-box button {
+        padding: 14px;
+        font-size: 15px;
+        margin-top: 20px;
+        border-radius: 6px;
+    }
+}

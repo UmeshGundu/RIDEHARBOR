@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Car Rentals in Hyderabad | RIDE HARBOR</title>
+</head>
+
+<body>
+    <div class="page-content">
+        <!-- ========== PRELOADER ========== -->
+        <section id="preloader">
+            <div class="loader-content">
+                <div class="mobile-brand">RIDE<span>HARBOR</span></div>
+                <h2 class="luxury-text">Drive The Extraordinary</h2>
+                <div class="loading-bar"></div>
+                <div class="logo-container">
+                    <img src="/img/lambologo.png">
+                    <img src="/img/bmwlogo.png">
+                    <img src="/img/benzlogo.png">
+                    <img src="/img/audilogo.webp">
+                    <img src="/img/rrlogo.png">
+                    <img src="/img/porschelogo.webp">
+                    <img src="/img/lexuslogo.png">
+                </div>
+            </div>
+        </section>
+        <header>
+            <!-- HAMBURGER MENU (mobile only) -->
+            <div class="hamburger" id="hamburger">
+                <span class="ham-dot"></span>
+                <span class="ham-dot"></span>
+                <span class="ham-dot"></span>
+                <span class="ham-dot"></span>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="explore-link">Explore ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="lamborghini.html">Lamborghini</a>
+                        <a href="mercedes.html">Mercedes Benz</a>
+                        <a href="bmw.html">BMW</a>
+                        <a href="porsche.html">Porsche</a>
+                        <a href="lexus.html">Lexus</a>
+                        <a href="rollsroyce.html">Rolls Royce</a>
+                        <a href="audi.html">Audi</a>
+                    </div>
+                </div>
+                <a href="tour.html">Tour Packages</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+            <div class="logo">
+                RIDE<span>HARBOR</span>
+            </div>
+            <div class="signin">
+                <a href="#" class="gold-btn">Sign In</a>
+            </div>
+            <!-- MOBILE MENU OVERLAY -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <div class="mobile-menu-close" id="mobileMenuClose">&#x2715;</div>
+                <nav class="mobile-nav">
+                    <a href="home.html" class="mobile-nav-link">Home</a>
+                    <a href="#" class="mobile-nav-link mobile-explore-toggle">Explore ▾</a>
+                    <div class="mobile-submenu" id="mobileSubmenu">
+                        <a href="lamborghini.html">Lamborghini</a>
+                        <a href="mercedes.html">Mercedes Benz</a>
+                        <a href="bmw.html">BMW</a>
+                        <a href="porsche.html">Porsche</a>
+                        <a href="lexus.html">Lexus</a>
+                        <a href="rollsroyce.html">Rolls Royce</a>
+                        <a href="audi.html">Audi</a>
+                    </div>
+                    <a href="tour.html" class="mobile-nav-link">Tour Packages</a>
+                    <a href="contactus.html" class="mobile-nav-link">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Drive Beyond Luxury</h1>
+                <button class="gold-btn">Book Now</button>
+            </div>
+        </section>
+        <section class="booking-box">
+            <h2 class="booking-title">Luxury, On Your Terms</h2>
+            <div class="booking-grid">
+                <div class="form-group">
+                    <label>Pickup Location*</label>
+                    <input type="text" id="pickupLocation" placeholder="Enter Your Location">
+                </div>
+                <div class="form-group">
+                    <label>Pickup Time*</label>
+                    <input type="time" id="pickupTime" placeholder="Enter Your Pickup Time">
+                </div>
+                <div class="form-group">
+                    <label>Rental Duration*</label>
+                    <select id="durationSelect">
+                        <option>Duration</option>
+                        <option>4 Hours</option>
+                        <option>8 Hours</option>
+                        <option>12 Hours</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Choose Car*</label>
+                    <select id="carSelect">
+                        <option>Choose Car</option>
+                        <option>Lamborghini Huracan</option>
+                        <option>BMW M4</option>
+                        <option>Mercedes AMG GT</option>
+                    </select>
+                </div>
+                <!-- <div class="form-group">
+                <label>Journey Date</label>
+                <input type="date">
+            </div> -->
+                <div class="form-group">
+                    <label>Full Name*</label>
+                    <input type="text" id="fullName" placeholder="Enter Your Full Name">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number*</label>
+                    <input type="text" id="mobileNumber" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="form-group">
+                    <label>Email*</label>
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label>Driving License*</label>
+                    <input type="text" placeholder="Enter Your License Number">
+                </div>
+                <div class="form-group button-group">
+                    <button type="button" id="reserveBtn">Reserve Now</button>
+                </div>
+            </div>
+        </section>
+        <div>
+            <h1 class="section-title">Exclusive & Powerful</h1>
+        </div>
+        <section class="car-video-section">
+            <video autoplay muted loop playsinline>
+                <source src="/videos/lamborghinivideo.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="car-video-content left">
+                <h1 id="one">01</h1>
+                <h2>Lamborghini Huracán</h2>
+                <p class="tagline">Pure Italian Aggression</p>
+                <div class="specs">
+                    <span>610 HP</span>
+                    <span>0-100 km/h in 3.2s</span>
+                    <span>Top Speed 325 km/h</span>
+                </div>
+                <div class="price">₹ 1,50,000 / day</div>
+                <button class="gold-btn">Rent Now</button>
+            </div>
+        </section>
+        <section class="car-video-section">
+            <video autoplay muted loop playsinline>
+                <source src="/videos/benzvideo.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="car-video-content right">
+                <h1 id="two">02</h1>
+                <h2>Mercedes AMG GT</h2>
+                <p class="tagline">Luxury Meets Performance</p>
+                <div class="specs">
+                    <span>523 HP</span>
+                    <span>0-100 km/h in 3.8s</span>
+                    <span>Top Speed 310 km/h</span>
+                </div>
+                <div class="price">₹ 1,00,000 / day</div>
+                <button class="gold-btn">Rent Now</button>
+            </div>
+        </section>
+        <section class="car-video-section">
+            <video autoplay muted loop playsinline>
+                <source src="/videos/bmwvideo.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="car-video-content left">
+                <h1 id="three">03</h1>
+                <h2>BMW M4</h2>
+                <p class="tagline">Precision Engineered Power</p>
+                <div class="specs">
+                    <span>503 HP</span>
+                    <span>0-100 km/h in 3.9s</span>
+                    <span>Top Speed 290 km/h</span>
+                </div>
+                <div class="price">₹ 50,000 / day</div>
+                <button class="gold-btn">Rent Now</button>
+            </div>
+        </section>
+        <section class="logo-slider">
+            <div class="logo-track">
+                <div class="logo-card"><img src="/img/lambologo.png"></div>
+                <div class="logo-card"><img src="/img/benzlogo.png"></div>
+                <div class="logo-card"><img src="/img/audilogo.webp"></div>
+                <div class="logo-card"><img src="/img/bmwlogo.png"></div>
+                <div class="logo-card"><img src="/img/rrlogo.png"></div>
+                <div class="logo-card"><img src="/img/porschelogo.webp"></div>
+                <div class="logo-card"><img src="/img/lexuslogo.png"></div>
+            </div>
+        </section>
+        <section class="logo-link-container">
+            <a href="#" id="viewmodel">Discover more→</a>
+        </section>
+        <!-- <section class="premium-features">
+        <h2 class="section-title">Why Choose Ride Harbor</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚗</div>
+                <h3>Premium Fleet</h3>
+                <p>Exotic & luxury cars maintained to perfection.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">520oi🛡️</div>
+                <h3>Fully Insured</h3>
+                <p>Drive stress-free with complete protection coverage.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>24/7 Support</h3>
+                <p>We’re available anytime you need assistance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3>Doorstep Delivery</h3>
+                <p>Luxury delivered anywhere in Hyderabad.</p>
+            </div>
+        </div>
+    </section> -->
+        <section class="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>Select Your Dream Car</h3>
+                        <p>Browse our premium collection and choose your ride.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>Upload License & Confirm</h3>
+                        <p>Quick verification process for a seamless booking.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>Drive & Experience Luxury</h3>
+                        <p>Your car is delivered. Enjoy the extraordinary.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section">
+        <h2 class="section-title">Popular Cars</h2>
+        <div class="cars">
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="/img/lamboimg.jpg">
+                </div>
+                <div class="car-info">
+                    <h3>Lamborghini Huracan</h3>
+                    <div class="price">₹ 1,50,000 / day</div>
+                    <div class="buttons">
+                        <a href="#" class="btn">Rent Now</a>
+                        <a href="#" id="btn1">Find more→</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="/img/benzimg.webp">
+                </div>
+                <div class="car-info">
+                    <h3>Mercedes AMG GT</h3>
+                    <div class="price">₹ 1,00,000 / day</div>
+                    <div class="buttons">
+                        <a href="#" class="btn">Rent Now</a>
+                        <a href="#" id="btn1">Find more→</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="/img/bmwimg.webp">
+                </div>
+                <div class="car-info">
+                    <h3>BMW M4</h3>
+                    <div class="price">₹ 50,000 / day</div>
+                    <div class="buttons">
+                        <a href="#" class="btn">Rent Now</a>
+                        <a href="#" id="btn1">Find more→</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+        <!-- <section>
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features">
+            <div class="feature">
+                <h4>Premium Fleet</h4>
+                <p>Top luxury brands available anytime.</p>
+            </div>
+            <div class="feature">
+                <h4>24/7 Support</h4>
+                <p>We assist you anytime anywhere.</p>
+            </div>
+            <div class="feature">
+                <h4>Best Price Guarantee</h4>
+                <p>Luxury experience at competitive pricing.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Amazing experience! The car was spotless and powerful."</p>
+                <strong>- Rahul</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Best luxury rental service I’ve ever used."</p>
+                <strong>- Arjun</strong>
+            </div>
+        </div>
+    </section>
+    <section class="app">
+        <h2>Download CarsRent App</h2>
+        <p>Book luxury cars anytime, anywhere.</p>
+        <button>Download Now</button>
+    </section> -->
+        <section class="premium-testimonials">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <p>"Booked a Lamborghini for my wedding — unforgettable experience."</p>
+                        <div class="client">
+                            <img src="/img/clientimg1.webp">
+                            <div>
+                                <h4>Rahul Sharma</h4>
+                                <span>Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Professional service and spotless vehicles. Highly recommended."</p>
+                        <div class="client">
+                            <img src="/img/clientimg2.jpg">
+                            <div>
+                                <h4>Arjun Reddy</h4>
+                                <span>Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Surprised my brother with a BMW M4 — best birthday ever!"</p>
+                        <div class="client">
+                            <img src="/img/clientimg3.jpg">
+                            <div>
+                                <h4>Kiran Patel</h4>
+                                <span>Secunderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Smooth booking process and doorstep delivery was on time."</p>
+                        <div class="client">
+                            <img src="/img/clientimg4.jpg">
+                            <div>
+                                <h4>Vikram Singh</h4>
+                                <span>Gachibowli</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Booked a Lamborghini for my wedding — unforgettable experience."</p>
+                        <div class="client">
+                            <img src="/img/clientimg2.jpg">
+                            <div>
+                                <h4>Rahul Sharma</h4>
+                                <span>Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Professional service and spotless vehicles. Highly recommended."</p>
+                        <div class="client">
+                            <img src="/img/clientimg3.jpg">
+                            <div>
+                                <h4>Arjun Reddy</h4>
+                                <span>Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>RIDE<span>HARBOR</span></h2>
+                <p>
+                    Hyderabad’s trusted destination for luxury and supercar rentals.
+                    Experience power, prestige, and performance.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="#">Explore Cars</a>
+                <a href="tour.html">Tour Packages</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cancellation Policy</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Hyderabad, Telangana</p>
+                <p>+91 98765 43210</p>
+                <p>support@rideharbor.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 RIDE HARBOR. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- ================= SIGN IN MODAL ================= -->
+    <div id="loginModal" class="luxury-modal">
+        <div class="luxury-modal-content">
+            <span class="close-btn" id="closeLogin">&times;</span>
+            <h2 class="modal-title">Welcome to Ride Harbor</h2>
+            <p class="modal-subtitle">Experience luxury, on your terms</p>
+            <!-- ===== SECTION 1: NEW USER SIGN UP ===== -->
+            <div class="auth-section">
+                <p class="auth-section-label">New here? Create your account</p>
+                <div class="input-group">
+                    <input type="text" id="usernameInput" required autocomplete="off">
+                    <label>Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="signupMobileInput" required autocomplete="off" maxlength="10">
+                    <label>Mobile Number</label>
+                </div>
+                <button class="gold-btn modal-btn" id="signupBtn">Sign Up & Send OTP</button>
+                <!-- OTP step for signup -->
+                <div id="signupOtpSection" class="otp-section">
+                    <div class="input-group">
+                        <input type="text" id="signupOtpInput" maxlength="6" autocomplete="off">
+                        <label>Enter OTP</label>
+                    </div>
+                    <button class="gold-btn modal-btn" id="signupVerifyOtpBtn">Verify & Register</button>
+                </div>
+            </div>
+            <!-- ===== DIVIDER ===== -->
+            <div class="auth-divider">
+                <span></span>
+                <p>OR</p>
+                <span></span>
+            </div>
+            <!-- ===== SECTION 2: EXISTING USER LOGIN ===== -->
+            <div class="auth-section">
+                <p class="auth-section-label">Already a member? Continue</p>
+                <div class="input-group">
+                    <input type="tel" id="loginMobileInput" required autocomplete="off" maxlength="10">
+                    <label>Registered Mobile Number</label>
+                </div>
+                <button class="gold-btn modal-btn" id="loginContinueBtn">Continue</button>
+                <!-- OTP step for login -->
+                <div id="loginOtpSection" class="otp-section">
+                    <div class="input-group">
+                        <input type="text" id="loginOtpInput" maxlength="6" autocomplete="off">
+                        <label>Enter OTP</label>
+                    </div>
+                    <button class="gold-btn modal-btn" id="loginVerifyOtpBtn">Verify & Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================================== -->
+    <div id="profileModal" class="profile-fullpage-modal">
+        <div class="profile-modal-inner">
+            <button class="profile-close-btn" id="closeProfile">&times;</button>
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="4" fill="#D4AF37" />
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#D4AF37" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="profile-info">
+                    <h2 id="profileName">—</h2>
+                    <p id="profileMobile">—</p>
+                </div>
+                <button class="profile-logout-btn" id="logoutBtn">Sign Out</button>
+            </div>
+            <div class="profile-bookings-wrapper">
+                <div class="profile-booking-section">
+                    <h3 class="profile-section-title">⚡ Instant Bookings</h3>
+                    <div id="instantBookings" class="bookings-grid">
+                        <p class="no-bookings-msg">No instant bookings yet.</p>
+                    </div>
+                </div>
+                <div class="profile-booking-section">
+                    <h3 class="profile-section-title">📅 Scheduled Bookings</h3>
+                    <div id="futureBookings" class="bookings-grid">
+                        <p class="no-bookings-msg">No scheduled bookings yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Booking Modal -->
+    <div id="editBookingModal" class="luxury-modal">
+        <div class="luxury-modal-content">
+            <span class="close-btn" id="closeEditBooking">&times;</span>
+            <h2 class="modal-title">Edit Booking</h2>
+            <input type="hidden" id="edit_id">
+            <div class="input-group">
+                <input type="text" id="edit_name" autocomplete="off">
+                <label>Full Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="edit_mobile" autocomplete="off">
+                <label>Mobile</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="edit_location" autocomplete="off">
+                <label>Location</label>
+            </div>
+            <div class="input-group">
+                <input type="date" id="edit_date">
+                <label>Journey Date</label>
+            </div>
+            <div class="input-group">
+                <!-- DESKTOP -->
+                <select id="edit_car" class="desktop-car-select">
+                    <option value="">Select Car</option>
+                </select>
+                <!-- MOBILE -->
+                <div id="editMobileCarTrigger" class="mobile-car-trigger">
+                    <span id="editMobileCarLabel">Select Car</span>
+                    <span>▾</span>
+                </div>
+                <label>Car</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="edit_email" autocomplete="off">
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="edit_license" autocomplete="off">
+                <label>License Number</label>
+            </div>
+            <button class="gold-btn modal-btn" id="saveEditBooking">Save Changes</button>
+        </div>
+    </div>
+    <!-- ================= BOOKING MODAL ================= -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBooking">&times;</span>
+            <h2>Complete Your Booking</h2>
+            <p>Luxury awaits you. Fill the details below.</p>
+            <button class="gold-btn" id="proceedPayment">Proceed Payment</button>
+        </div>
+    </div>
+    <!-- ================================== -->
+    <div id="bookingFormModal" class="luxury-modal">
+        <div class="luxury-modal-content">
+            <span class="close-btn" id="closeBookingForm">&times;</span>
+            <h2 class="modal-title">Book Your Car</h2>
+            <input type="text" id="bf_name" placeholder="Full Name">
+            <input type="text" id="bf_mobile" placeholder="Mobile">
+            <input type="text" id="bf_location" placeholder="Location">
+            <input type="date" id="bf_date">
+            <!-- DESKTOP: normal select (hidden on mobile) -->
+            <select id="bf_car" class="desktop-car-select">
+                <option value="">Select Car</option>
+            </select>
+            <!-- MOBILE: custom trigger (hidden on desktop) -->
+            <div id="mobileCarTrigger" class="mobile-car-trigger">
+                <span id="mobileCarLabel">Select Car</span>
+                <span>▾</span>
+            </div>
+            <input type="email" id="bf_email" placeholder="Email">
+            <input type="text" id="bf_license" placeholder="License">
+            <button class="gold-btn" id="submitBooking">
+                Confirm Booking
+            </button>
+        </div>
+    </div>
+    <!-- ================================== -->
+    <div id="carPickerModal" class="car-picker">
+        <div class="car-picker-content">
+            <h3>Select Your Car</h3>
+            <div id="carList"></div>
+        </div>
+    </div>
+    <!-- ======================================= -->
+    <script src="/js/Home.js"></script>
+</body>
+
+</html>
